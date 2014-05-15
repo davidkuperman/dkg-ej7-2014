@@ -1,4 +1,9 @@
 Ej7::Application.routes.draw do
+  resources :users
+
+  get "navigation/home"
+  get "navigation/about"
+  root 'navigation#home' 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
